@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[12pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % modern themes
 \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -55,39 +55,43 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-\small{Undergraduate researcher at Lawrence Livermore National Laboratory. Passionate about the possibilities of the intersection between Artificial Intelligence and Computer Security.}
+\small{Undergraduate researcher at Lawrence Livermore National Laboratory. Passionate about the possibilities between the intersection between Artificial Intelligence and Computer Security.}
 
 \section{Employment}
-\vspace{6pt}
 
 \cventry{September 2015--Present}{Computer Scientist}{Lawrence Livermore National Laboratory}{Livermore,CA}{}{}
 \vspace{5pt}
 
+As a Computer Scientist in LLNL, I've worked on a wide variety of efforts some of which include but are not limited to:
 \begin{itemize}
-	\item \textbf{YubNub:} Researching neural network models to identify the author of a particular source code sample. 
-
-	\item \textbf{Electric Stellata:} Created convolutional neural network models for identifying the compilers, versions and flags that were used to create a binary file. Research is still ongoing.
-
-	\item \textbf{CyDER:} Created a NARX neural network model for modeling the amount of PV generation in a particular installation.
+	\item Created models for a coupled transmission-communication simulation for studying the effects of cyber attacks on the transmission system. 
 	
-	\item \textbf{CES-21:} Built various models for a coupled transmission-communication simulation for studying the effect of cyber attacks on the power grid transmission system.
+	\item Built a neural network model for predicting the amount of PV generation in a particular distribution installation. Results had to meet 
+	
+	Built a NARX neural network model for predicting the amount of PV generation in a particular installation.
+	
+	\item Created a convolutional neural network model for identifying the compilers, versions and flags used to create a binary.  
+
+	\item Researching neural network models to identify the author of a particular source code sample. 
 \end{itemize}
 
 \section{Education}
-\vspace{6pt}
 
 \subsection{Academic Qualifications}
-\vspace{6pt}
+
+\cventry{2016--Present}{SCPD Student}{Stanford University}{Stanford, C.A.}{}{}
+
+\vspace{2pt}
 
 \cventry{2012--2015}{Bachelor of Science, Computer Engineering}{Universidad del Turabo}{Gurabo, Puerto Rico}{\textit{Cumulative GPA 3.78}}{}
 
 \vspace{2pt}
 
 \cventry{August 2009--May 2012}{High School}{Thomas Alva Edison School}{Caguas, Puerto Rico}{}{}
-\vspace{2pt}
+
+\section{Experience}
 
 \subsection{Internships}
-\vspace{6pt}
 
 \cventry{June 2015--August 2015}{Undergraduate Intern--Cyber Defenders Student Program}
 {Lawrence Livermore National Laboratory}{Livermore, CA}{}{}
@@ -118,10 +122,7 @@
 	\item Implemented a simulation to study the resilience of different network models against various types of attacks.
 \end{itemize}
 
-\vspace{2pt}
-
-\section{Leadership Experience}
-\vspace{6pt}
+\subsection{Leadership}
 
 \begin{itemize}
 	\item Founding board member of the ACM (Association for Computing Machinery) and Tau Alpha Omega chapters at the University of Turabo.
@@ -129,24 +130,7 @@
 	\item Organized student workshops and documented reunions for the Association for Computing Machinery.
 \end{itemize}
 
-\section{Conferences}
-\vspace{6pt}
-
-\section{Technical and Personal skills}
-\vspace{6pt}
-
-\begin{itemize}
-	\item \textbf{Programming Languages:} C, C++, Python, Bash, \LaTeX
-	
-	\item \textbf{Deep Learning Libraries:} PyTorch, Tensorflow, Keras
-	
-	\item \textbf{Computer Forensic Tools:} IDA, OllyDbg, Autopsy
-	
-	\item Fluent Spanish and English speaker
-\end{itemize}
-
 \section{Achievements}
-\vspace{6pt}
 
 \cventry{March 2014--Present}{Member of the Tau Alpha Omega Engineering Honor Society}{Universidad del Turabo}{Gurabo, Puerto Rico}{}{}
 
@@ -156,11 +140,11 @@
 
 \vspace{2pt}
 
-\cventry{March 7, 2014}{Presenter at Puerto Rico Researchers Council}{}{San Juan, Puerto Rico}{}{}
+\cventry{March 7, 2014}{Presenter at Puerto Rico Researchers Council}{AGMUS Research Symposium}{San Juan, Puerto Rico}{}{Presented results of compressing hyper-spectral images using neural networks.}
 
 \vspace{2pt}
 
-\cventry{November 9, 2013}{Participant at Caribbean Finals, ACM-ICPC}{}{Dominican Republic}{}{}
+\cventry{November 9, 2013}{Participant at Caribbean Finals, ACM-ICPC}{Insituto Tecnologico de Santo Domingo}{Dominican Republic}{}{}
 
 \vspace{2pt}
 
@@ -170,11 +154,48 @@
 
 \cventry{April 27, 2013}{Second place in the UPR-Bayamon Computer Programming Competition}{University of Puerto Rico}{Bayamon, Puerto Rico}{}{}
 
+\section{Projects}
+
+\textbf{Machine Learning for Brand Loyalty Prediction}\\
+\cvlistitem{Using data from the Nielsen Consumer Panel Dataset, developed a brand loyalty prediction system}
+\cvlistitem{Implemented three machine learning techniques: SVM, Multinomial Logistic Regression and K-Means Clustering on consumer data}
+\cvlistitem{The model was able to predict whether or not a user would be loyal to the brand with an accuracy of 95\%.}
+
+
+\vspace{5pt}
+
+\textbf{Machine Learning for Conversational Agents}\\
+\cvlistitem{Used data from the Ubuntu Dialog Corpus as well as Twitter to create a retrieval-based and generative conversational agent}
+\cvlistitem{Implemented a retrieval-based agent using two LSTM's to encode the question and candidate answers, thereby comparing the similarity between the two and giving it a score}
+\cvlistitem{Implemented a Sequence to Sequence model with an attention mechanism to generate responses to arbitrary conversation context}
+
+\vspace{5pt}
+
+\textbf{Algorithm Implementations}\\
+\cvlistitem{Implemented various algorithms: Tries, Merge Sort, Quick Sort and contributed them to an open source project: \url{https://github.com/kennyledet/Algorithm-Implementations}}
+
+\section{Skills}
+
+\textbf{Programming Languages:} Proficient in Python, C++ Strong Experience in C and Java
+\vspace{2pt}
+
+\textbf{Environment} Windows, Linux
+\vspace{2pt}
+	
+\textbf{Deep Learning Libraries:} PyTorch, Tensorflow, Keras
+\vspace{2pt}
+	
+\textbf{Computer Forensic Tools:} IDA, OllyDbg, Autopsy
+\vspace{2pt}
+	
+Fluent Spanish and English speaker
+\vspace{2pt}
+
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
 %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
 \nocite{*}
-\bibliographystyle{plain}
+\bibliographystyle{abbrv}
 \bibliography{publications}                        % 'publications' is the name of a BibTeX file
 
 % Publications from a BibTeX file using the multibib package
